@@ -1,0 +1,373 @@
+.page {
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.header {
+  height: 100vh;
+  min-height: 30em;
+  background-color: #f2f2f2;
+  position: relative;
+  color: black;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+  flex-wrap: wrap;
+  /* выше установили ограничения для секции */
+}
+
+.logo {
+  width: 100px;
+}
+
+.logo_place_header {
+  z-index: 5;
+  margin: 0;
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  width: 183px;
+  height: 32px;
+  background-image: url(file:///C:/Inna/YandexPracticum/dev/how-to-learn/how-to-learn/images/logo_place_header.svg);
+}
+
+.header__title {
+  font-size: 102px;
+  margin: 0;
+  position: absolute;
+  font-weight: bold;
+  line-height: 96px;
+  max-width: 730px;
+  left: 64px;
+  z-index: 2;
+}
+
+.header__subtitle {
+  z-index: 1;
+  font-size: 18px;
+  margin: 0;
+  position: absolute;
+  font-weight: normal;
+  line-height: 25px;
+  max-width: 380px;
+  left: 64px;
+  bottom: 30px;
+}
+
+.header__main-illustration {
+  z-index: 1;
+  margin: 0;
+  position: absolute;
+  background-size: cover;
+  width: 765px;
+  height: 608px;
+  bottom: 0;
+  right: 0;
+  background-image: url(../images/header-image.png)
+}
+
+@media screen and (max-width: 680px) {
+  .header__main-illustration {
+    display: none;
+  }
+}
+
+/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.header__square-pic {
+  height: 568px;
+  width: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  animation-name: rotation;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.description {
+  padding-top: 100px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.two-columns__brief {
+  width: 175 px;
+  font-size: 18px;
+  font-style: normal;
+  color: #2F80ED;
+  line-height: 1.2;
+  text-align: left;
+  margin: 0;
+}
+
+.two-columns__main-text {
+  line-height: 34px;
+  font-size: 24px;
+  font-style: normal;
+  margin: 0;
+  min-width: 784px;
+  width: 80%;
+}
+
+.two-columns__paragraph:first-of-type {
+  margin-top: 0;
+}
+
+.two-columns__paragraph {
+  margin: 30px 0 0;
+}
+
+.two-columns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.digits {
+  padding: 100px 0;
+}
+
+.section-title {
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.section-subtitle {
+  width: 60%;
+  text-align: center;
+  margin: 20px auto 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.table {
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  max-width: 1100px;
+}
+
+.table__call {
+  width: 250px;
+  margin-top: 60px;
+ }
+
+.table__heading {
+  line-height: 1.15px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 20px;
+}
+
+.feynman {
+  background: #f2f2f2 url(../images/feynman.png) no-repeat left bottom;
+  background-size: 867px 673px;
+  height: 890px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feynman__title {
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  width: 648px;
+  text-align: center;
+  margin: 100px 0 0;
+  }
+
+.feynman__subtitle {
+  text-align: center;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  margin: 70px 0 0;
+}
+
+.feynman__link {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  position: absolute;
+  right: 48px;
+  top: 50%;
+}
+
+.kaufman {
+  background-color: #1f1f1f;
+  color: white;
+  position: relative;
+  padding: 90px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.section-title_theme_dark {
+  z-index: 1;
+  width: 60%;
+  }
+
+.section-subtitle_theme-dark {
+  z-index: 1;
+}
+
+.table_theme-dark {
+  z-index: 1;
+}
+
+.kaufman__triangle {
+  position: absolute;
+  background-image: url(file:///C:/Inna/YandexPracticum/dev/how-to-learn/how-to-learn/images/kaufman-triangle.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  right: -210px;
+  top: 0;
+  width: 877px;
+  height: 877px;
+  z-index: 0;
+  animation-name: rotation;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  }
+
+/* и элемента с модификатором вида ключ-значение */
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
+}
+
+.footer {
+  background-color: #1f1f1f;
+  color: white;
+  padding: 60px 0 40px;
+  box-sizing: border-box;
+  }
+
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  }
+
+.footer__column_content_copyright {
+  position: relative;
+  flex-basis: 711px;
+  margin-left: 0;
+  }
+
+  .logo_place_footer {
+  width: 183px;
+  height: 35px;
+  background-image: url(file:///C:/Inna/YandexPracticum/dev/how-to-learn/how-to-learn/images/logo_place_footer.svg);
+  }
+
+  .footer__author {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  }
+
+  .footer__column_content_info {
+  margin: 0;
+  padding: 0;
+  }
+
+  .footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+    }
+
+  .footer__column-links {
+    list-style: none;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 20px 0 16px;
+    margin: 0;
+  }
+
+  .footer__column_content_social {
+   margin: auto;
+   padding: 0;
+  }
+
+  .footer__social-icon {
+    padding: 0;
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+      }
+
+  .footer_column-link {
+    list-style: none;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 20px 0 16px;
+    margin: 0;
+  }
+
+  .footer_column-link a {
+    text-decoration: none;
+    color: white;
+  }
