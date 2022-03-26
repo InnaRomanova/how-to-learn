@@ -36,7 +36,7 @@
   left: 64px;
   width: 183px;
   height: 32px;
-  }
+}
 
 .header__title {
   font-size: 102px;
@@ -70,7 +70,7 @@
   height: 608px;
   bottom: 0;
   right: 0;
-  }
+}
 
 @media screen and (max-width: 680px) {
   .header__main-illustration {
@@ -119,7 +119,7 @@
 }
 
 .two-columns__brief {
-  width: 175px;
+  min-width: 175px;
   font-size: 18px;
   font-style: normal;
   color: #2F80ED;
@@ -185,7 +185,7 @@
 .table__call {
   width: 250px;
   margin-top: 60px;
- }
+}
 
 .table__heading {
   line-height: 1.15px;
@@ -217,7 +217,7 @@
   width: 648px;
   text-align: center;
   margin: 100px 0 0;
-  }
+}
 
 .feynman__subtitle {
   text-align: center;
@@ -250,7 +250,7 @@
 .section-title_theme_dark {
   z-index: 1;
   width: 60%;
-  }
+}
 
 .section-subtitle_theme-dark {
   z-index: 1;
@@ -262,7 +262,7 @@
 
 .kaufman__triangle {
   position: absolute;
-  background-image: url(file:///C:/Inna/YandexPracticum/dev/how-to-learn/how-to-learn/images/kaufman-triangle.svg);
+  background-image: url(../images/kaufman-triangle.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -275,7 +275,7 @@
   animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  }
+}
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
@@ -286,84 +286,93 @@
 }
 
 .footer {
+  min-height: 350px;
   background-color: #1f1f1f;
   color: white;
-  padding: 60px 0 40px;
+  display: flex;
   box-sizing: border-box;
-  }
+}
 
 .footer__columns {
   display: flex;
   justify-content: space-between;
   width: 90%;
   margin: auto;
-  }
+  padding: 60px 0 40px;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+}
 
 .footer__column_content_copyright {
-  position: relative;
+  display: flex;
   flex-basis: 711px;
-  margin-left: 0;
-  }
+  justify-content: space-between;
+}
 
-  .logo_place_footer {
+.logo_place_footer {
   width: 183px;
   height: 35px;
-  background-image: url(file:///C:/Inna/YandexPracticum/dev/how-to-learn/how-to-learn/images/logo_place_footer.svg);
-  }
+  background-image: url(../images/logo_place_footer.svg);
+}
 
-  .footer__author {
+.footer__author {
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
   left: 0;
-  position: absolute;
-  bottom: 0;
-  }
 
-  .footer__column_content_info {
+  bottom: 0;
+}
+
+.footer__column_content_info {
+  display: flex;
   margin: 0;
   padding: 0;
-  }
+}
 
-  .footer__column-heading {
+.footer__column-heading {
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
   margin: 0;
   padding: 0;
-    }
+}
 
-  .footer__column-links {
-    list-style: none;
-    line-height: 30px;
-    font-size: 18px;
-    font-weight: normal;
-    padding: 20px 0 16px;
-    margin: 0;
-  }
+.footer__column-links {
+  list-style: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 20px 0 16px;
+  margin: 0;
+}
 
-  .footer__column_content_social {
-   margin: auto;
-   padding: 0;
-  }
+.footer__column_content_social {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
 
-  .footer__social-icon {
-    padding: 0;
-    margin-right: 10px;
-    width: 16px;
-    height: 16px;
-      }
+.footer__social-icon {
+  padding: 0;
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+}
 
-  .footer_column-link {
-    list-style: none;
-    line-height: 30px;
-    font-size: 18px;
-    font-weight: normal;
-    padding: 20px 0 16px;
-    margin: 0;
-  }
+.footer_column-link {
+  list-style: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 20px 0 16px;
+  margin: 0;
+}
 
-  .footer_column-link a {
-    text-decoration: none;
-    color: white;
-  }
+.footer_column-link a {
+  text-decoration: none;
+  color: white;
+}
