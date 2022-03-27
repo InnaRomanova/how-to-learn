@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./vendor/normalize.css">
   <link rel="stylesheet" href="./styles/style.css">
   <title>Научиться учиться</title>
 </head>
@@ -18,7 +18,8 @@
         к обучению вы можете использовать в своей жизни?
         <a href="#" class="header__link">Узнать &rarr;</a>
       </p>
-      <img src="./images/header-image.png" class="header__main-illustration" alt="картинка не загрузилась">
+      <img src="./images/header-image.png" class="header__main-illustration"
+        alt="картинка 'Опять двойка' не загрузилась">
       <div class="header__square-pic"></div>
     </header>
     <main class="content">
@@ -94,7 +95,7 @@
       </section>
 
       <section class="kaufman">
-        <h2 class="section-title  section-title_theme_dark">Принципы обучения</h2>
+        <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
         <p class="section-subtitle section-subtitle_theme-dark">от Джоша Кауфмана</p>
         <div class="table table_theme-dark">
           <div class="table__cell table__cell_theme_dark">
@@ -144,38 +145,38 @@
     </main>
 
     <footer class="footer">
-      <div class="footer footer__columns">
+      <nav class="footer__columns">
         <div class="footer__column footer__column_content_copyright">
           <div class="logo logo_place_footer"></div>
-          <p class="footer__author">&copy;2019. Виктор Абанькин</p>
+          <p class="footer__author">&copy;2022. Инна Романова</p>
         </div>
 
-        <div class="footer__column footer__column_content_info">
+        <nav class="footer__column footer__column_content_info">
           <h3 class="footer__column-heading">О Практикуме</h3>
           <ul class="footer__column-links">
-            <li>Главная</li>
-            <li>Концепция</li>
-            <li>Наставники</li>
+            <li><a class="footer__column-link" href="#">Главная</a></li>
+            <li><a class="footer__column-link" href="#">Концепция</a></li>
+            <li><a class="footer__column-link" href="#">Наставники</a></li>
           </ul>
-        </div>
-        <div class="footer__column">
-          <h3 class="footer__column footer__column_content_social">Соцсети</h3>
-          <ul class="footer_column-link">
+        </nav>
+        <div class="footer__column footer__column_content_social">
+          <h3 class="footer__column-heading">Соцсети</h3>
+          <ul class="footer__column-links">
             <li>
-              <a lang="en" href="#">
+              <a lang="en" href="#" class="footer__column-link">
                 <img src="./images/facebook_color_white.svg" alt="Ошибка" class="footer__social-icon">Facebook</a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" class="footer__column-link">
                 <img src="./images/vk_color_white.svg" alt="Ошибка" class="footer__social-icon">ВКонтакте</a>
             </li>
             <li>
-              <a lang="en" href="#">
+              <a lang="en" href="#" class="footer__column-link">
                 <img src="./images/instagram_color_white.svg" alt="Ошибка" class="footer__social-icon">Instagram</a>
             </li>
           </ul>
         </div>
-      </div>
+      </nav>
     </footer>
   </div>
 </body>
