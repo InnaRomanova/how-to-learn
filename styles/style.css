@@ -43,7 +43,7 @@
   font-weight: bold;
   line-height: 96px;
   max-width: 730px;
-  margin-left: 64px;
+  margin: 0 0 0 64px;
   z-index: 2;
 }
 
@@ -91,7 +91,6 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-
 }
 
 .two-columns {
@@ -231,9 +230,6 @@
   align-items: center;
   overflow: hidden;
   z-index: 1;
-}
-
-.theme_dark {
   color: white;
 }
 
@@ -297,6 +293,8 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  margin: 0;
+  padding: 0;
 }
 
 .footer__column_content_info {
