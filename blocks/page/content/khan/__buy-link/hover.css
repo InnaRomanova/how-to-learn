@@ -1,0 +1,6 @@
+/* Определяет стиль элемента при наведении на него курсора мыши, плавный прозрачный переход цвета */
+.khan__buy-link:hover {
+    color: blueviolet;
+    transition: opacity .2s linear;
+    cursor: pointer;
+    }

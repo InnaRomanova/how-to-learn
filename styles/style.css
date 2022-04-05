@@ -1,345 +1,81 @@
-.page {
-  min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
-  max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
-  margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+@import url(../blocks/page/page.css);
+@import url(../blocks/page/header/header.css);
+@import url(../blocks/page/header/logo/logo.css);
+@import url(../blocks/page/header/logo/logo_place_header.css);
+@import url(../blocks/page/header/__title/header__title.css);
+@import url(../blocks/page/header/__subtitle/header__subtitle.css);
+@import url(../blocks/page/header/__link/header__link.css);
+@import url(../blocks/page/header/__link/hover.css);
+@import url(../blocks/page/header/__main-illustration/header__main-illustration.css);
+@import url(../blocks/page/header/__square-pic/header__square-pic.css);
+
+@import url(../blocks/page/content/description/description.css);
+@import url(../blocks/page/content/description/two-columns/two-columns.css);
+@import url(../blocks/page/content/description/two-columns/__brief/two-columns__brief.css);
+@import url(../blocks/page/content/description/two-columns/__main-text/two-columns__main-text.css);
+@import url(../blocks/page/content/description/two-columns/__paragraph/two-columns__paragraph.css);
+@import url(../blocks/page/content/description/two-columns/__paragraph/first-of-type.css);
+@import url(../blocks/page/content/description/two-columns/__span-accent/two-columns__span-accent.css);
+@import url(../blocks/page/content/techniques/techniques.css);
+@import url(../blocks/page/content/techniques/section/section-title.css);
+@import url(../blocks/page/content/techniques/section/section-subtitle.css);
+@import url(../blocks/page/content/techniques/cards/cards.css);
+@import url(../blocks/page/content/techniques/cards/__item/cards__item.css);
+@import url(../blocks/page/content/techniques/cards/__image/cards__image.css);
+@import url(../blocks/page/content/techniques/cards/__title/cards__title.css);
+@import url(../blocks/page/content/techniques/cards/__description/cards__description.css);
+@import url(../blocks/page/content/video/video.css);
+@import url(../blocks/page/content/video/__iframes/video__iframes.css);
+@import url(../blocks/page/content/video/__iframe/video__iframe.css);
+@import url(../blocks/page/content/video/__iframe/last-of-type.css);
+@import url(../blocks/page/content/oakley/oakley.css);
+@import url(../blocks/page/content/feynman/feynman.css);
+@import url(../blocks/page/content/feynman/__title/feynman__title.css);
+@import url(../blocks/page/content/feynman/__subtitle/feynman__subtitle.css);
+@import url(../blocks/page/content/feynman/__link/feynman__link.css);
+@import url(../blocks/page/content/feynman/__link/hover.css);
+@import url(../blocks/page/content/digits/digits.css);
+@import url(../blocks/page/content/digits/table/table.css);
+@import url(../blocks/page/content/digits/table/__call/table__call.css);
+@import url(../blocks/page/content/digits/table/__heading/table__heading.css);
+@import url(../blocks/page/content/digits/table/__text/table__text.css);
+@import url(../blocks/page/content/khan/khan.css);
+@import url(../blocks/page/content/khan/__container/khan__container.css);
+@import url(../blocks/page/content/khan/__author/khan__author.css);
+@import url(../blocks/page/content/khan/__title/khan__title.css);
+@import url(../blocks/page/content/khan/__quote/khan__quote.css);
+@import url(../blocks/page/content/khan/__quote-author/khan__quote-author.css);
+@import url(../blocks/page/content/khan/__quote-author-subline/khan__quote-author-subline.css);
+@import url(../blocks/page/content/khan/__book-container/khan__book-container.css);
+@import url(../blocks/page/content/khan/__book-pic/khan__book-pic.css);
+@import url(../blocks/page/content/khan/__buy-link/khan__buy-link.css);
+@import url(../blocks/page/content/khan/__buy-link/hover.css);
+@import url(../blocks/page/content/kaufman/kaufman.css);
+@import url(../blocks/page/content/kaufman/section-title/_theme/section-title_theme_dark.css);
+@import url(../blocks/page/content/kaufman/table/__cell/_theme/table__cell_theme_dark.css);
+@import url(../blocks/page/content/kaufman/__triangle/kaufman__triangle.css);
+@import url(../blocks/page/content/resources/resources.css);
+@import url(../blocks/page/content/resources/__logo-zone/resources__logo-zone.css);
+@import url(../blocks/page/content/resources/__link/resources__link.css);
+@import url(../blocks/page/footer/footer.css);
+@import url(../blocks/page/footer/__columns/footer__columns.css);
+@import url(../blocks/page/footer/__column/footer__column.css);
+@import url(../blocks/page/footer/__column/_content/footer__column_content_copyright.css);
+@import url(../blocks/page/footer/logo/_place/logo_place_footer.css);
+@import url(../blocks/page/footer/__author/footer__author.css);
+@import url(../blocks/page/footer/__column/_content/footer__column_content_info.css);
+@import url(../blocks/page/footer/__column-heading/footer__column-heading.css);
+@import url(../blocks/page/footer/__column-links/footer__column-links.css);
+@import url(../blocks/page/footer/__column/_content/footer__column_content_social.css);
+@import url(../blocks/page/footer/__social-icon/footer__social-icon.css);
+@import url(../blocks/page/footer/__column-link/footer__column-link.css);
+@import url(../blocks/page/footer/__column-link/hover.css);
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
 }
-
-.header {
-  height: 100vh;
-  background-color: #f2f2f2;
-  position: relative;
-  color: black;
-  min-height: 600px;
-  max-height: 756px;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  flex-wrap: wrap;
-  z-index: 1;
-  /* выше установили ограничения для секции */
+100% {
+    transform: rotate(360deg);
 }
-
-.logo {
-  width: 100px;
-}
-
-.logo_place_header {
-  z-index: 5;
-  margin: 0;
-  position: absolute;
-  top: 30px;
-  left: 64px;
-  width: 183px;
-  height: 32px;
-}
-
-.header__title {
-  font-size: 102px;
-  font-weight: bold;
-  line-height: 96px;
-  max-width: 730px;
-  margin: 0 0 0 64px;
-  z-index: 2;
-}
-
-.header__subtitle {
-  z-index: 1;
-  font-size: 18px;
-  margin: 0;
-  position: absolute;
-  font-weight: normal;
-  line-height: 25px;
-  max-width: 380px;
-  left: 64px;
-  bottom: 30px;
-}
-
-.header__link {
-  color: #2f80ed;
-  text-decoration: none;
-}
-
-.header__main-illustration {
-  margin: 0;
-  position: absolute;
-  width: 765px;
-  height: 608px;
-  bottom: 0;
-  right: 0;
-}
-
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
-  background-color: #2f80ed;
-  position: absolute;
-  top: 64px;
-  right: 0;
-  z-index: -1;
-}
-
-
-.description {
-  padding-top: 100px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.two-columns {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 80%;
-}
-
-.two-columns__brief {
-  max-width: 175px;
-  font-size: 18px;
-  font-weight: normal;
-  color: #2F80ED;
-  line-height: 1.2;
-  text-align: left;
-  margin: 0;
-}
-
-.two-columns__main-text {
-  line-height: 34px;
-  font-size: 24px;
-  font-style: normal;
-  margin: 0;
-  min-width: 784px;
-  width: 80%;
-}
-
-.two-columns__paragraph:first-of-type {
-  margin-top: 0;
-}
-
-.two-columns__paragraph {
-  margin: 30px 0 0;
-}
-
-.two-columns__span-accent {
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.digits {
-  padding: 100px 0;
-}
-
-.section-title {
-  width: 60%;
-  text-align: center;
-  margin: 0 auto;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: bold;
-}
-
-.section-subtitle {
-  width: 60%;
-  text-align: center;
-  margin: 20px auto 0;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-}
-
-.table {
-  display: flex;
-  margin: auto;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-between;
-  max-width: 1100px;
-}
-
-.table__call {
-  width: 250px;
-  margin-top: 60px;
-}
-
-.table__heading {
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.table__text {
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-  margin: 20px 0 0;
-}
-
-.feynman {
-  background: #f2f2f2 url(../images/feynman.png) no-repeat left bottom;
-  background-size: 867px 673px;
-  min-height: 890px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.feynman__title {
-  line-height: 1.15;
-  font-size: 120px;
-  font-weight: bold;
-  width: 648px;
-  text-align: center;
-  margin: 100px 0 0;
-}
-
-.feynman__subtitle {
-  text-align: center;
-  line-height: 51px;
-  font-size: 36px;
-  font-weight: normal;
-  margin: 70px 0 0;
-}
-
-.feynman__link {
-  line-height: 51px;
-  font-size: 36px;
-  font-weight: normal;
-  position: absolute;
-  right: 48px;
-  top: 50%;
-  color: #2f80ed;
-  text-decoration: none;
-}
-
-.kaufman {
-  background-color: #1f1f1f;
-  position: relative;
-  padding: 90px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: hidden;
-  z-index: 1;
-  color: white;
-}
-
-.section-title_theme_dark {
-  width: 60%;
-}
-
-.kaufman__triangle {
-  position: absolute;
-  background-image: url(../images/kaufman-triangle.svg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  right: -210px;
-  top: 0;
-  width: 877px;
-  height: 877px;
-  z-index: -1;
-}
-
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  margin-right: 0;
-  margin-top: 80px;
-}
-
-.footer {
-  min-height: 350px;
-  background-color: #1f1f1f;
-  color: white;
-  display: flex;
-  box-sizing: border-box;
-}
-
-.footer__columns {
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  margin: 60px auto 40px;
-}
-
-.footer__column {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer__column_content_copyright {
-  display: flex;
-  flex-basis: 711px;
-  justify-content: space-between;
-}
-
-.logo_place_footer {
-  width: 183px;
-  height: 35px;
-  background-image: url(../images/logo_place_footer.svg);
-}
-
-.footer__author {
-  line-height: 25px;
-  font-size: 18px;
-  font-weight: normal;
-  margin: 0;
-  padding: 0;
-}
-
-.footer__column_content_info {
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.footer__column-heading {
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0;
-  padding: 0;
-}
-
-.footer__column-links {
-  list-style: none;
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: normal;
-  padding: 20px 0 16px;
-  margin: 0;
-}
-
-.footer__column_content_social {
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.footer__social-icon {
-  padding: 0;
-  margin-right: 10px;
-  width: 16px;
-  height: 16px;
-}
-
-.footer__column-link {
-  list-style: none;
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: normal;
-  padding: 20px 0 16px;
-  margin: 0;
-  color: white;
-  text-decoration: none;
 }

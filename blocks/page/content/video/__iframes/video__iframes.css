@@ -1,0 +1,8 @@
+/* видео расположены поверх границы двух секций следующего нижнего блока */
+.video__iframes {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 50px auto -20px auto;
+    z-index: 1;    
+  }
