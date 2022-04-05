@@ -70,7 +70,6 @@
 @import url(../blocks/page/footer/__social-icon/footer__social-icon.css);
 @import url(../blocks/page/footer/__column-link/footer__column-link.css);
 @import url(../blocks/page/footer/__column-link/hover.css);
-
 @keyframes rotation {
   0% {
     transform: rotate(0deg);
