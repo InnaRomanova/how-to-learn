@@ -21,6 +21,7 @@
 @import url(../blocks/page/content/techniques/section/section-subtitle.css);
 @import url(../blocks/page/content/techniques/cards/cards.css);
 @import url(../blocks/page/content/techniques/cards/__item/cards__item.css);
+@import url(../blocks/page/content/techniques/cards/__item/nth-child.css);
 @import url(../blocks/page/content/techniques/cards/__image/cards__image.css);
 @import url(../blocks/page/content/techniques/cards/__title/cards__title.css);
 @import url(../blocks/page/content/techniques/cards/__description/cards__description.css);
