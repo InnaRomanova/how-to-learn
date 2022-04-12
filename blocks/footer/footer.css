@@ -1,0 +1,8 @@
+/* в блоке используется черный фон с белым шрифтом, флекс контейнер */
+.footer {
+  min-height: 350px;
+  background-color: #1f1f1f;
+  color: white;
+  display: flex;
+  box-sizing: border-box;
+}

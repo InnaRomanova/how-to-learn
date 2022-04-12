@@ -1,6 +1,0 @@
-/* плавный прозрачный переход цвета при наведении на ссылку */
-.footer__column-link:hover {
-    color: #4b6280;
-    transition: opacity .2s linear;
-    cursor: pointer;
-  }

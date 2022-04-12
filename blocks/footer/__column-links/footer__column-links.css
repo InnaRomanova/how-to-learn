@@ -1,0 +1,9 @@
+/* список */
+.footer__column-links {
+  list-style: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 20px 0 16px;
+  margin: 0;
+}
